@@ -13,4 +13,5 @@ if uploaded_file is not None:
     # Can be used wherever a "file-like" object is accepted:
     df = pd.read_excel(uploaded_file,sheet_name='teste')
     st.write(df)
-    xx=st.line_chart(df,x='letra',y='num')
+    xx=px.line(df,x='letra',y='num')
+    xx
